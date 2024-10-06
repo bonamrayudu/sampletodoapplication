@@ -1,12 +1,12 @@
 
 import './App.css';
-import Todo from './Todo';
+import TodoApp from './TodoApp';
 
 function App() {
   return (
     <div className="App">
     
-    <Todo/>
+    <TodoApp/>
     </div>
   );
 }
