@@ -1,0 +1,123 @@
+<script>
+    //reverse the string
+function reversed(str){
+let reverse=""
+for(let i=str.length -1; i>=0;i--){
+reverse+=str[i]
+}
+console.log(reverse);
+
+}
+
+reversed("rayudu")
+let reverse="bonam"
+console.log(reverse.split("").reverse().join(""));
+
+// longest word in the sentence
+
+let sentence = "hi iam surya rayudu bonam";
+
+function longestword(someword) {
+  let word1 = "";
+  
+  // Split the sentence into an array of words
+  let wordsArray = someword.split(" ");
+
+  // Loop through the array of words
+  for (let word of wordsArray) {
+    // If the current word is longer than word1, update word1
+    if (word.length > word1.length) {
+      word1 = word;
+    }
+  }
+
+  console.log(word1);
+}
+
+longestword(sentence);
+
+//the given number is palindrom are not
+let wordss="racecar"
+let palindrom=wordss.split(" ").reverse().join("");
+if (wordss==palindrom){
+    console.log("true");
+    
+}
+//remove duplicates
+let array=[1,2,3,4,4,5,5,5,6]
+console.log(new Set(array));
+// anagrames
+let a1="silent"
+let b1="listen"
+const sorted1 =a1.split("").sort().join()
+const sorted2 =b1.split("").sort().join()
+if(sorted1===sorted2){
+console.log("true");
+
+}
+// largest number in the array
+let array1= [1,5,3,4,8,9]
+let largest=array1[0]
+for(let i=1; i<array1.length; i++){
+    if(array1[i]>largest){
+        largest=array1[i]
+    }
+  
+}
+console.log(largest);
+
+//prime number
+let primenumber = [2, 3, 4, 5, 6, 7];
+
+for (let i = 0; i < primenumber.length; i++) {
+  let isPrime = true; // Assume the number is prime
+
+  // Check divisibility from 2 to one less than the number itself
+  for (let j = 2; j < primenumber[i]; j++) {
+    if (primenumber[i] % j === 0) {
+      isPrime = false; // If divisible by any number other than 1 and itself, it's not prime
+      break; // Exit the loop as soon as we find a divisor
+    }
+  }
+
+  // Print the result if it's prime
+  if (isPrime) {
+    console.log(primenumber[i] + " is a prime number");
+  } else {
+    console.log(primenumber[i] + " is not a prime number");
+  }
+}
+
+let a=0
+factorial=1
+if (a==0){
+    factorial=1
+}else{
+
+
+for (let i=1;i<=a;i++){
+    factorial*=i
+}
+}
+console.log(factorial);
+//remove all the white spaces
+let whitespace="interview of javascript"
+console.log(whitespace.replace(/\s/g,""));
+//sorting the array accending order
+let arrays1=[4,5,6,2,1,9]
+console.log(arrays1.sort((a,b)=>a-b));
+let arrayssss=[3,5,6,4,]
+let target=5
+let filteredd=arrayssss.filter(element=>element!==target)
+console.log(filteredd);
+
+
+//reverse of words
+
+let wordssss="hello world"
+
+let wordsss=wordssss.split(" ").reverse().join(" ")
+console.log(wordsss);
+
+
+</script>

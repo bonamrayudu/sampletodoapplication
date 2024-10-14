@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Equal Headings</title>
+    <style>
+        /* Container for the h1 elements */
+        .heading-container {
+            display: flex;
+            justify-content: space-between; /* Space out the headings */
+            align-items: stretch; /* Stretch headings to equal height */
+            flex-wrap: wrap; /* Allow wrapping */
+            margin: 20px;
+        }
+
+        /* Style each h1 element */
+        .heading-container h1 {
+            flex: 1; /* Make each h1 take up equal space */
+            text-align: center; /* Center text inside each h1 */
+            margin: 10px;
+            padding: 20px;
+            background-color: lightblue; /* Background color for visibility */
+            border: 1px solid #ccc; /* Border for visibility */
+            min-width: 300px; /* Ensure h1 elements have a minimum width */
+            box-sizing: border-box; /* Include padding and border in element's total width */
+        }
+
+        /* Media query for mobile devices (max-width: 600px) */
+        @media (max-width: 600px) {
+            .heading-container {
+                flex-direction: column; /* Stack h1 elements vertically */
+            }
+
+            .heading-container h1 {
+                width: 100%; /* Each h1 takes the full width on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heading-container">
+        <h1>Heading 1</h1>
+        <h1>Heading 2</h1>
+        <h1>Heading 3</h1>
+        <h1>Heading 1</h1>
+        <h1>Heading 2</h1>
+        <h1>Heading 3</h1>
+    </div>
+
+</body>
+</html>
