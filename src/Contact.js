@@ -8,5 +8,5 @@ function Contact() {
     </div>
   );
 }
-//just
+//just will see
 export default Contact;
